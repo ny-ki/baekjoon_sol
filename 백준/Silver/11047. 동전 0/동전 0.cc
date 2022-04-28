@@ -2,6 +2,8 @@
 using namespace std;
 
 int main() {
+  ios::sync_with_stdio(0);
+  cin.tie(0);
   int n, k, num;
   int answer=0;
   vector <int> v;
@@ -13,8 +15,6 @@ int main() {
       continue;
     v.push_back(num);
   }
-  sort(v.begin(),v.end());
-
   int i=v.size()-1;
   while(k!=0){
     if(i<0)
